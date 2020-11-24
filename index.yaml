@@ -1,0 +1,41 @@
+apiVersion: v1
+entries:
+  redmine:
+  - annotations:
+      category: ProjectManagement
+    apiVersion: v1
+    appVersion: 4.1.1
+    created: "2020-11-24T21:04:57.459243+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.x.x
+    description: A flexible project management web application.
+    digest: b53d6fe1f9a35070e5a796d76fb6e4484350cd5f427e892ecfd24c0bec820577
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redmine
+    icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
+    keywords:
+    - redmine
+    - project management
+    - www
+    - http
+    - web
+    - application
+    - ruby
+    - rails
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: redmine
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redmine
+    - http://www.redmine.org/
+    urls:
+    - redmine-14.2.13.tgz
+    version: 14.2.13
+generated: "2020-11-24T21:04:57.45091+02:00"
