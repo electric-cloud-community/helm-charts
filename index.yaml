@@ -3,7 +3,7 @@ entries:
   cloudbees-flow-agent:
   - apiVersion: v1
     appVersion: 10.0.2.144701
-    created: "2021-02-10T17:21:48.538493+02:00"
+    created: "2021-02-10T17:24:00.604689+02:00"
     description: A Helm chart for CloudBees Flow Agent
     digest: 78b20b40e26ef4008b1e0a02ba6b75eb97afc14276abaae799b3c6ddaf47e1a5
     name: cloudbees-flow-agent
@@ -16,7 +16,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 10.5.8
-    created: "2021-02-10T17:21:48.543573+02:00"
+    created: "2021-02-10T17:24:00.60747+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -51,8 +51,39 @@ entries:
   - annotations:
       category: Infrastructure
     apiVersion: v2
+    appVersion: 1.19.6
+    created: "2021-02-10T17:24:00.61312+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Chart for the nginx server
+    digest: 9a3d46aa41de864ab9cfec36bf9a7908e8c56a0c4d8b286bab61b80f1b48fc7a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/nginx
+    icon: https://bitnami.com/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: nginx
+    sources:
+    - https://github.com/bitnami/bitnami-docker-nginx
+    - http://www.nginx.org
+    urls:
+    - nginx-8.4.1.tgz
+    version: 8.4.1
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
     appVersion: 1.19.4
-    created: "2021-02-10T17:21:48.546671+02:00"
+    created: "2021-02-10T17:24:00.610476+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -84,7 +115,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-02-10T17:21:48.551324+02:00"
+    created: "2021-02-10T17:24:00.616197+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -118,7 +149,7 @@ entries:
       category: ProjectManagement
     apiVersion: v2
     appVersion: 4.1.1
-    created: "2021-02-10T17:21:48.565987+02:00"
+    created: "2021-02-10T17:24:00.630729+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -160,7 +191,7 @@ entries:
       category: ProjectManagement
     apiVersion: v1
     appVersion: 4.1.1
-    created: "2021-02-10T17:21:48.557308+02:00"
+    created: "2021-02-10T17:24:00.622072+02:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -193,4 +224,4 @@ entries:
     urls:
     - redmine-14.2.13.tgz
     version: 14.2.13
-generated: "2021-02-10T17:21:48.535496+02:00"
+generated: "2021-02-10T17:24:00.603848+02:00"
