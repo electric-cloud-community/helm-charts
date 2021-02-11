@@ -3,7 +3,7 @@ entries:
   cloudbees-flow-agent:
   - apiVersion: v1
     appVersion: 10.0.2.144701
-    created: "2021-02-10T17:24:00.604689+02:00"
+    created: "2021-02-11T14:41:11.65812+02:00"
     description: A Helm chart for CloudBees Flow Agent
     digest: 78b20b40e26ef4008b1e0a02ba6b75eb97afc14276abaae799b3c6ddaf47e1a5
     name: cloudbees-flow-agent
@@ -16,7 +16,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 10.5.8
-    created: "2021-02-10T17:24:00.60747+02:00"
+    created: "2021-02-11T14:41:11.661998+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -52,7 +52,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.19.6
-    created: "2021-02-10T17:24:00.61312+02:00"
+    created: "2021-02-11T14:41:11.669693+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +83,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.19.4
-    created: "2021-02-10T17:24:00.610476+02:00"
+    created: "2021-02-11T14:41:11.666344+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -115,7 +115,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-02-10T17:24:00.616197+02:00"
+    created: "2021-02-11T14:41:11.674247+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -149,7 +149,49 @@ entries:
       category: ProjectManagement
     apiVersion: v2
     appVersion: 4.1.1
-    created: "2021-02-10T17:24:00.630729+02:00"
+    created: "2021-02-11T14:41:11.701564+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.x.x
+    description: A flexible project management web application.
+    digest: 91f4d5ad4e5262d15d0822dccafbc919308015add366fd5ebeedeea40c072a26
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redmine
+    icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
+    keywords:
+    - redmine
+    - project management
+    - www
+    - http
+    - web
+    - application
+    - ruby
+    - rails
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: redmine
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redmine
+    - http://www.redmine.org/
+    urls:
+    - redmine-15.2.2.tgz
+    version: 15.2.2
+  - annotations:
+      category: ProjectManagement
+    apiVersion: v2
+    appVersion: 4.1.1
+    created: "2021-02-11T14:41:11.69234+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -191,7 +233,7 @@ entries:
       category: ProjectManagement
     apiVersion: v1
     appVersion: 4.1.1
-    created: "2021-02-10T17:24:00.622072+02:00"
+    created: "2021-02-11T14:41:11.681895+02:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -224,4 +266,4 @@ entries:
     urls:
     - redmine-14.2.13.tgz
     version: 14.2.13
-generated: "2021-02-10T17:24:00.603848+02:00"
+generated: "2021-02-11T14:41:11.65576+02:00"
